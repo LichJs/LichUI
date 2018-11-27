@@ -11,10 +11,14 @@
 ### 规范
 ```
 type(scope?): subject
+<BLANK LINE>
 body?
+<BLANK LINE>
 footer?
 ```
-`git commit` 说明:
+
+`git commit` 说明: 如果git commit中含有body或者footer, 需使用空白行进行隔断.
+
 ```
 [type]      (必须)  用于说明`commit`的类别 
 [scope]     (可选)  于说明`commit`影响的范围
