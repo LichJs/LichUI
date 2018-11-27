@@ -26,10 +26,10 @@ footer?
 `git commit` 示例:
 ```
 fix(component): 修复Alert组件样式,
-<body>
+
 因xx属性在xx浏览器中存在兼容性问题,
 所以将组件属性 "xxa" 修改为 "xxb".
-<footer>
+
 Closes #198, #199
 ```
 
