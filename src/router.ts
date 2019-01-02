@@ -22,7 +22,7 @@ const router = new Router({
     {
       path: '/index.htm',
       name: 'home',
-      meta: { title: '开户引导页' },
+      meta: { title: '引导页' },
       component: Home,
     },
     {
@@ -39,4 +39,5 @@ router.beforeEach( (to, from, next) => {
   }
   next();
 });
+
 export default router;
