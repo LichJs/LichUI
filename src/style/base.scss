@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "./util";
+@import "./border";
+
+/**
+ * ! 使用 REM + VW 布局
+ * ! html的font-size使用vw单位，css使用rem单位，文本大小可选择使用px
+ * ! 使用transform以支持高清设备的边框1px（包括圆角），使用 @mixin ./_border.scss
+ * ! 可设置容器固定纵横比，可设置页面最大最小宽度
+ * 
+ * * 解析说明  >>>  https://www.cnblogs.com/imwtr/p/9648233.html
+ */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    @include root-font-size();
+}
+
+body {
+    /* rem2px的使用方式，仅用于临时计算 */
+    border-width: rem2px(0.6);
+    background-color: #f8f8f8;
+    font-size: px2rem(28);
+    font-family: "Microsoft YaHei";
+}
+
+.container {
+    background-color: #fff;
+}

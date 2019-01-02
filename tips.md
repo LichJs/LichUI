@@ -60,6 +60,9 @@ Closes #198, #199
 ## vetur
 > vue vscode 插件, 提供vue语法高亮等等,
 
+## prettier
+> vetur 使用prettier做格式化.
+
 ## better comments 
 > 较好的注释提示 高亮
 <div align="left">
